@@ -27,7 +27,7 @@ At minimum you must define the data pin your LED strip is connected to, and the 
 |---------------|---------------------------------------------------------------------------------------------------------|
 |`RGB_DI_PIN`   |The pin connected to the data pin of the LEDs                                                            |
 |`RGBLED_NUM`   |The number of LEDs connected                                                                             |
-|`RGBLED_SPLIT` |(Optional) For split keyboards, the number of LEDs connected on each half directly wired to `RGB_DI_PIN` |
+|`RGBLED_SPLIT` |(Optional) For split keyboards, the number of LEDs connected on each half directly wired to `RGB_DI_PIN`. This feature currently does not work as the slave side will not update even as the master side does. To circumbent this, wire the RGB DI pin from the master side across the TRRS (or other connector) and directly to the RGB strip on the slave side. |
 
 Then you should be able to use the keycodes below to change the RGB lighting to your liking.
 
